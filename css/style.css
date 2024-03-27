@@ -1,0 +1,32 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    background-color: aliceblue;
+    gap: 7px;
+}
+#grid-container > header, nav,main, aside,footer{
+    padding: 20px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;        
+}
+header{
+    grid-column: 1/4;
+}
+nav{
+}
+main{
+    height: 450px;
+}
+aside{
+}
+footer{
+    grid-column: 1/4;
+}
+@media (max-width:800px) {
+    #grid-container > *{
+      grid-column: 1/4;
+    }
+    nav{height:50px;
+    width:100%;}
+    }
